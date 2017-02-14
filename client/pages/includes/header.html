@@ -1,0 +1,33 @@
+<template name="header">
+    <header class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{pathFor 'messagesList'}}">Messanger</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            {{#if currentUser}}
+                <ul class="nav navbar-nav">
+                    <li><a href="{{pathFor 'profile'}}">Profile</a></li>
+                    <li>
+                        <select class="form-control" id="location">
+                            <option value="0" selected disabled>Select Location</option>
+                            <option value="1">location 1</option>
+                            <option value="2">location 2</option>
+                            <option value="3">location 3</option>
+                            <option value="4">location 4</option>
+                            <option value="5">location 5</option>
+                        </select>
+                    </li>
+                </ul>
+            {{/if}}
+            <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons}}
+            </ul>
+        </div>
+    </header>
+</template>

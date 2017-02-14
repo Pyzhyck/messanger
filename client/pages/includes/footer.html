@@ -1,0 +1,16 @@
+<template name="footer">
+    <footer id="footer">
+        <div class="row">
+            {{#if currentUser}}
+                <form class="form">
+                    <div class="col-md-10 col-lg-10">
+                        <input type="text" name="message" class="form-control">
+                    </div>
+                    <div class="col-md-2 col-lg-2">
+                        <input type="submit" value="Send" class="btn btn-success"/>
+                    </div>
+                </form>
+            {{/if}}
+        </div>
+    </footer>
+</template>

@@ -1,0 +1,9 @@
+<template name="messageItem">
+    <div class="messageItem">
+        <div class="message {{#if isCurrentUser}}message-right{{/if}}">
+            <span class="author">{{author}}</span>
+            <p>{{text}}</p>
+            <span class="date text-right">{{date}}</span>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: #d7d7d7;
+}
+
+#header {
+    background-color: #a7a7a7;
+    box-shadow: 0 1px 1px 1px #bbb;
+    height: 10vh;
+}
+
+#location {
+    margin-top: 8px;
+}
+
+#messagesList {
+    padding: 0 5px;
+    height: 70vh;
+    border: 3px solid #eee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    overflow-y: scroll;
+}
+
+.user_name {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.messageItem {
+    padding: 5px 0;
+}
+
+.messageItem:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.message {
+    width: 35vw;
+    padding: 10px;
+    float: left;
+    background-color: #e7e7e7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px #999;
+}
+
+.message-right {
+    float: right;
+}
+
+.message p {
+    color: #555;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.message .author, .message .date {
+    display: block;
+    font-size: 10px;
+    color: #777;
+}
+
+.message .author {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+#footer {
+    background-color: #e7e7e7;
+    padding: 20px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#footer input[type=text] {
+    width: 100%;
+    font-size: 22px;
+}
+
+#footer input[type=submit] {
+    width: 100%;
+}
